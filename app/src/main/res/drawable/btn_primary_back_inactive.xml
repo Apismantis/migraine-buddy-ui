@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_primary_back_pressed_1" android:state_pressed="true" />
+    <item android:drawable="@drawable/btn_primary_back_pressed_1" android:state_selected="true" />
+    <item android:drawable="@drawable/btn_primary_back_disabled" android:state_enabled="false" />
+    <item android:drawable="@drawable/btn_primary_back_normal_1" />
+</selector>
