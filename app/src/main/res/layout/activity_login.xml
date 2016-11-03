@@ -89,8 +89,9 @@
             android:layout_height="40dp"
             android:background="@drawable/btn_round_login_back"
             android:gravity="center"
-            android:hint="Place your Email used to register"
+            android:hint="@string/place_your_email_used_to_register"
             android:inputType="textEmailAddress"
+            android:textSize="15sp"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white" />
 

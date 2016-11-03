@@ -1,6 +1,8 @@
 package com.blueeagle.migrainebuddyui.Activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,7 +13,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.blueeagle.migrainebuddyui.ButtonUtil;
+import com.blueeagle.migrainebuddyui.Constants.Constants;
 import com.blueeagle.migrainebuddyui.R;
+import com.blueeagle.migrainebuddyui.SharePreManager;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -101,6 +105,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
             case R.id.btnNext:
+                SharePreManager.saveUser(etUserName.getText().toString(), this);
+                Intent intent1 = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent1);
+                finish();
+
                 break;
         }
     }
