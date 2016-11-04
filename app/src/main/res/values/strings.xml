@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Migranie Buddy</string>
+    <string name="forgot_password"><big>FORGOT</big>\n<small>PASSWORD</small></string>
+    <string name="already_have_an_account">LOGIN\nALREADY HAVE AN ACCOUNT?</string>
+    <string name="create_your_account">NEXT\nCREATE YOUR ACCOUNT</string>
+    <string name="have_an_account">I ALREADY HAVE AN ACCOUNT</string>
+    <string name="create_a_new_account">CREATE A NEW ACCOUNT</string>
+    <string name="intro">Creating your account ensures that you\nwill nevwe lose your data, even if you\nchange device.</string>
+    <string name="get_started">Get started with the app now!</string>
+    <string name="sign_up_with_facebook"><![CDATA[   Sign up with facebook]]></string>
+    <string name="place_your_email_used_to_register">Place your Email used to register</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_notification">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

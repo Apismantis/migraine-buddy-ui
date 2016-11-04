@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#355064</color>
+    <color name="colorPrimaryBack">#7DC1C8</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#417A8D</color>
+    <color name="colorPrimaryText">#355064</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDivider">#B0B0B0</color>
+    <color name="colorHintText">#CFD8DC</color>
+    <color name="colorInactiveBack">#C3C3C3</color>
+
+    <color name="colorPrimaryButtonNormal">#417A8D</color>
+    <color name="colorPrimaryButtonPressed">#06B0B9</color>
+    <color name="colorPrimaryButtonPressed2">#059299</color>
+    <color name="colorPrimaryButtonDisabled">#C3C3C3</color>
+
+    <color name="colorButtonOrange">#F47C5D</color>
+    <color name="colorButtonOrangePressed">#EF451A</color>
+
+    <color name="colorEditTextColor">#7DC1C8</color>
+    <color name="colorFacebook">#607CB9</color>
+    <color name="colorGoogle">#3F82F6</color>
+
+    <color name="colorNavBack">#2A3132</color>
+</resources>
