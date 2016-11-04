@@ -4,42 +4,67 @@
     android:layout_height="match_parent"
     tools:context="com.blueeagle.migrainebuddyui.Fragment.MeFragment">
 
-    <TextView
-        android:id="@+id/tvAbcdef"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:gravity="center"
-        android:text="You having a migraine for 24 days"
-        android:textColor="@color/colorEditTextColor"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:layout_above="@+id/btnEditRunning"
+        android:layout_alignParentTop="true">
 
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_below="@+id/tvAbcdef"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:background="@drawable/round_back"
-        android:gravity="center"
-        android:text="Get better soon!"
-        android:textColor="@color/colorPrimaryButtonPressed2"
-        android:textSize="@dimen/text_size_h2"
-        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:text="You having a migraine for 24 days"
+                android:textColor="@color/colorEditTextColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/round_back"
+                android:gravity="center"
+                android:text="Get better soon!"
+                android:textColor="@color/colorPrimaryButtonPressed2"
+                android:textSize="@dimen/text_size_h1"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
         android:id="@+id/btnEditRunning"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_above="@+id/lnBottom"
         android:background="@drawable/btn_primary_orange"
-        android:drawablePadding="@dimen/activity_vertical_margin_8dp"
-        android:drawableRight="@drawable/ic_notification_migraine"
-        android:gravity="right|center"
-        android:paddingRight="100dp"
-        android:text="Edit running migraine"
-        android:textColor="@android:color/white" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit running migraine"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_h3"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_migraine_now_normal" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/lnBottom"
@@ -64,13 +89,16 @@
             android:paddingTop="@dimen/activity_vertical_margin_8dp"
             android:text="Daily\nTracker"
             android:textAllCaps="true"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnMyRecord"
             style="?android:attr/buttonBarStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="0.5dp"
             android:layout_weight="1"
             android:background="@drawable/btn_primary_back_inactive"
             android:drawablePadding="@dimen/activity_vertical_margin_4dp"
@@ -81,13 +109,16 @@
             android:paddingTop="@dimen/activity_vertical_margin_8dp"
             android:text="My\nRecord"
             android:textAllCaps="true"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnMyCalender"
             style="?android:attr/buttonBarStyle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="0.5dp"
             android:layout_weight="1"
             android:background="@drawable/btn_primary_back_inactive"
             android:drawablePadding="@dimen/activity_vertical_margin_4dp"
@@ -98,8 +129,9 @@
             android:paddingTop="@dimen/activity_vertical_margin_8dp"
             android:text="My\nCalendar"
             android:textAllCaps="true"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
-
 </RelativeLayout>

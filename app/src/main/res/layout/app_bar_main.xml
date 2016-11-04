@@ -9,6 +9,7 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:elevation="0dp"
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -19,34 +20,9 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabGravity="fill"
-            app:tabMode="fixed" />
-
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main" />
-
-    <!--<android.support.v4.widget.NestedScrollView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-
-            <!--<android.support.v4.view.ViewPager-->
-                <!--android:id="@+id/viewPager"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
-        <!--</LinearLayout>-->
-
-    <!--</android.support.v4.widget.NestedScrollView>-->
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
@@ -54,6 +30,13 @@
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"
         tools:openDrawer="start">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
         <android.support.design.widget.NavigationView
             android:layout_width="wrap_content"

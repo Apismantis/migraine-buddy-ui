@@ -1,6 +1,9 @@
 package com.blueeagle.migrainebuddyui.Activity;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -63,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new MeFragment(), "ME");
         adapter.addFragment(new BuddiesFragment(), "BUDDIES");
         viewPager.setAdapter(adapter);
+        viewPager.setCurrentItem(1);
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         initTablayout();

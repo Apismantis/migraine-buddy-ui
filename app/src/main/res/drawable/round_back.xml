@@ -6,4 +6,6 @@
         android:width="3dp"
         android:color="@color/colorPrimaryButtonPressed2" />
 
+    <solid android:color="@android:color/transparent" />
+
 </shape>

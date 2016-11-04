@@ -1,13 +1,68 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.blueeagle.migrainebuddyui.Fragment.BuddiesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/lnStatusBox"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="buddies" />
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryButtonNormal"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin_8dp"
+            android:layout_weight="9"
+            android:background="@drawable/et_round_back"
+            android:hint="Share how you feel (140ch max)"
+            android:padding="@dimen/activity_vertical_margin_8dp"
+            android:textColorHint="@color/colorPrimaryText"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icn_ab_delete" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnStatusBox" />
+
+    <LinearLayout
+        android:id="@+id/btnEditRunning"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_primary_back_inactive"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_invite_my_buddies" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite my buddies"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_h2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
