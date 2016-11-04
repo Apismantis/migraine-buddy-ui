@@ -11,9 +11,7 @@
         android:id="@+id/imvTitle"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:adjustViewBounds="true"
         android:background="@drawable/when_section_bar"
-        android:padding="0dip"
         android:text="When happened"
         android:textColor="@android:color/white" />
 

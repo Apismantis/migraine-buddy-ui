@@ -14,7 +14,6 @@ import com.blueeagle.migrainebuddyui.R;
 public class ReportFragment extends Fragment {
     private Context mContext;
     private View rootLayout;
-    private RecyclerView rcvReports;
 
     public ReportFragment() {
     }
@@ -30,7 +29,5 @@ public class ReportFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        rcvReports = (RecyclerView) rootLayout.findViewById(R.id.rcvReports);
     }
 }

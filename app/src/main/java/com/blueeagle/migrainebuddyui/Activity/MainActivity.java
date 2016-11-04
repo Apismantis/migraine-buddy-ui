@@ -26,6 +26,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = "MainActivity";
     private DrawerLayout drawerLayout;
     private ListView lvMenuItem;
     private TabLayout tabLayout;
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        initTablayout();
         tabLayout.setupWithViewPager(viewPager);
     }
 
@@ -79,6 +81,12 @@ public class MainActivity extends AppCompatActivity {
         menuItems.add(new NavMenuItem(R.drawable.icn_logout_normal, R.drawable.icn_logout_clicked, "Logout"));
 
         return menuItems;
+    }
+
+    public void initTablayout() {
+        tabLayout.addTab(tabLayout.newTab().setText("REPORTS"));
+        tabLayout.addTab(tabLayout.newTab().setText("ME"));
+        tabLayout.addTab(tabLayout.newTab().setText("BUDDIES"));
     }
 
     @Override
