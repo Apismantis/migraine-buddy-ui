@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_vertical_margin_8dp"
             android:layout_weight="9"
+
             android:background="@drawable/et_round_back"
             android:hint="Share how you feel (140ch max)"
             android:padding="@dimen/activity_vertical_margin_8dp"
@@ -35,8 +36,9 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rcvStatus"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lnStatusBox" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnStatusBox"
+        android:layout_marginBottom="60dp" />
 
     <LinearLayout
         android:id="@+id/btnEditRunning"

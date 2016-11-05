@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -34,7 +35,11 @@ public class BuddiesFragment extends Fragment {
         mContext = getActivity();
         rootLayout = inflater.inflate(R.layout.fragment_buddies, container, false);
         rcvStatus = (RecyclerView) rootLayout.findViewById(R.id.rcvStatus);
-        //rcvStatus.addItemDecoration(new DividerItemDecoration(mContext, LinearLayout.VERTICAL));
+
+        rcvStatus.setHasFixedSize(true);
+        rcvStatus.setLayoutManager(new LinearLayoutManager(mContext));
+
+        rcvStatus.addItemDecoration(new DividerItemDecoration(mContext, LinearLayout.VERTICAL));
         rcvStatus.setAdapter(new StatusAdapter(getStatus()));
 
         Log.d("AAA", "Buddies on create view...");
@@ -53,12 +58,12 @@ public class BuddiesFragment extends Fragment {
         statusItems.add(new StatusItem("Pressure Buddy",
                 "The pressure is currently 0.0 milibar",
                 "Last seen\n12 minutes ago",
-                R.drawable.ic_pressure_buddy));
+                R.drawable.ic_city_buddy));
 
         statusItems.add(new StatusItem("Show risk of migraines in your city",
                 "Determining location can take up 2 minutes...",
                 "Last seen\n12 minutes ago",
-                R.drawable.ic_menstrual_coming_soon_press));
+                R.drawable.ic_city_buddy));
 
         return statusItems;
     }

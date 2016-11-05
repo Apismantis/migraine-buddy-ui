@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.blueeagle.migrainebuddyui.Fragment.ReportFragment">
 
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -38,8 +38,13 @@
                 android:textColor="@color/colorSecondaryText"
                 android:textStyle="bold" />
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvReports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
 
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 
 </FrameLayout>

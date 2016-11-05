@@ -33,7 +33,7 @@
                 android:background="@drawable/round_back"
                 android:gravity="center"
                 android:text="Get better soon!"
-                android:textColor="@color/colorPrimaryButtonPressed2"
+                android:textColor="@color/colorPrimaryButtonPressed1"
                 android:textSize="@dimen/text_size_h1"
                 android:textStyle="bold" />
 

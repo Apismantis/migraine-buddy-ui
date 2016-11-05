@@ -1,37 +1,47 @@
 package com.blueeagle.migrainebuddyui.Adapter;
 
 public class EmptyReportItem {
-    private int title;
-    private String description;
-    private int body;
+    private String title;
+    private String des;
+    private int imTitle;
+    private int imDes;
 
-    public EmptyReportItem(int title, String description, int body) {
+    public EmptyReportItem(String title, String des, int imTitle, int imDes) {
         this.title = title;
-        this.description = description;
-        this.body = body;
+        this.des = des;
+        this.imTitle = imTitle;
+        this.imDes = imDes;
     }
 
-    public int getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public void setTitle(int title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDes() {
+        return des;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDes(String des) {
+        this.des = des;
     }
 
-    public int getBody() {
-        return body;
+    public int getImTitle() {
+        return imTitle;
     }
 
-    public void setBody(int body) {
-        this.body = body;
+    public void setImTitle(int imTitle) {
+        this.imTitle = imTitle;
+    }
+
+    public int getImDes() {
+        return imDes;
+    }
+
+    public void setImDes(int imDes) {
+        this.imDes = imDes;
     }
 }

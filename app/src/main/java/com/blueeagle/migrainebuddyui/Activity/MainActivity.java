@@ -1,5 +1,6 @@
 package com.blueeagle.migrainebuddyui.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -115,7 +116,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_notification) {
-            return true;
+            Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

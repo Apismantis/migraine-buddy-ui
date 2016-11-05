@@ -15,4 +15,6 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="radius_8dp">8dp</dimen>
     <dimen name="text_size_h3">16sp</dimen>
+    <dimen name="activity_vertical_margin_6dp">6dp</dimen>
+    <dimen name="activity_vertical_margin_22dp">22dp</dimen>
 </resources>

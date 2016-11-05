@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.blueeagle.migrainebuddyui.Activity.MigraineSummaryActivity">
+
+    <TextView
+        android:id="@+id/tvNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHintText"
+        android:gravity="center"
+        android:padding="@dimen/activity_vertical_margin_22dp"
+        android:text="Thank you! Here is a summary of what you answered."
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lnSummaryOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNavBar"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_primary_back_inactive_1"
+            android:drawableTop="@drawable/ic_summary_duration"
+            android:padding="@dimen/activity_vertical_margin_8dp"
+            android:text="Duration"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryButtonPressed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="START"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="8:34 PM"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_h3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="10/2/16"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryButtonPressed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="END"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="10:30 PM"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_h3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="10/5/16"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryButtonPressed"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin_6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="DURATION"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="3d 1h"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_h3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnBottom"
+        android:layout_below="@+id/lnSummaryOverview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_orange"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_weather"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Weather"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.95"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Oops! I can only go back 7 days in time..."
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_size_h3"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_orange"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_notes"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Notes"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="This is a note..."
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.45"
+                    android:src="@drawable/calendar_next_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_intensity"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Intensity"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:src="@drawable/ic_intensity_level_7" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_pain_location"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Pain onset"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Right eye, Left from Head, Back of Head - Lower Left, Left Eye..."
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_medication"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Medication"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="2x Topiramate 25mg Oral, 1x Paracetamol 500mg Oral..."
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_relief_action"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Relief"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Caffeine"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_symptoms"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Symptoms"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Worse pain if moving"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_aura"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Aura and Prodrome"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Tingling in head"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_affect_activities"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Affect Activities"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Slower [at home]"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_location"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Location"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Bed(at home)"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_triggers"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Triggers"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Interrupted sleep"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_menstrual_cycle"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Menstruation"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="Yes"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_helpful"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Helpful Relief"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="2x Topiramate 25 mg Oral"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_back"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_summary_unhelpful"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Unhelpful Relief"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text="3x Maxalt 5mg Oral"
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary_orange"
+                    android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+                    android:drawableTop="@drawable/ic_migraine_now_normal"
+                    android:padding="@dimen/activity_vertical_margin_8dp"
+                    android:text="Attack Types"
+                    android:textColor="@android:color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=".............."
+                    android:textColor="@color/colorPrimaryButtonPressed"
+                    android:textSize="@dimen/text_size_h3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_vertical_margin_6dp"
+                    android:text=">"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_h3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_primary_back"
+            android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+            android:drawableTop="@drawable/icn_ab_delete"
+            android:padding="@dimen/activity_vertical_margin_8dp"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btnEditRunning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnBottom"
+            android:layout_weight="2.95"
+            android:background="@drawable/btn_primary_back_inactive"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_4dp"
+                android:src="@drawable/ic_next" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

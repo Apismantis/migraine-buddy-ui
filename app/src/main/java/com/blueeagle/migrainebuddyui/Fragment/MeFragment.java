@@ -1,6 +1,7 @@
 package com.blueeagle.migrainebuddyui.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.blueeagle.migrainebuddyui.Activity.MyRecordActivity;
 import com.blueeagle.migrainebuddyui.R;
 
 public class MeFragment extends Fragment implements View.OnClickListener {
@@ -54,6 +56,8 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.btnMyRecord:
+                Intent intent = new Intent(v.getContext(), MyRecordActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.btnDailyTracker:
