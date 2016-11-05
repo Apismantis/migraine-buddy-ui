@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.blueeagle.migrainebuddyui.Activity.MigraineSummaryActivity;
 import com.blueeagle.migrainebuddyui.Activity.MyRecordActivity;
 import com.blueeagle.migrainebuddyui.R;
 
@@ -53,6 +54,8 @@ public class MeFragment extends Fragment implements View.OnClickListener {
 
         switch (id) {
             case R.id.btnEditRunning:
+                Intent intent1 = new Intent(v.getContext(), MigraineSummaryActivity.class);
+                v.getContext().startActivity(intent1);
                 break;
 
             case R.id.btnMyRecord:

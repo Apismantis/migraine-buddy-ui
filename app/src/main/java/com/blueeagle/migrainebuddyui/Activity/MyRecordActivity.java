@@ -105,7 +105,7 @@ public class MyRecordActivity extends AppCompatActivity {
             Intent intent = new Intent(MyRecordActivity.this, SleepTimeActivity.class);
             startActivity(intent);
         } else {
-
+            
         }
     }
 

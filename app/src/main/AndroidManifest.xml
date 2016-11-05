@@ -46,7 +46,8 @@
             android:name=".Activity.SleepTimeActivity"
             android:label="Sleep Time"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".Activity.MigraineSummaryActivity"></activity>
+        <activity android:name=".Activity.MigraineSummaryActivity" />
+        <activity android:name=".Activity.TimeSelectionActivity"></activity>
     </application>
 
 </manifest>
