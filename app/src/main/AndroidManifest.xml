@@ -47,7 +47,10 @@
             android:label="Sleep Time"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".Activity.MigraineSummaryActivity" />
-        <activity android:name=".Activity.TimeSelectionActivity"></activity>
+        <activity android:name=".Activity.TimeSelectionActivity" />
+        <activity android:name=".Activity.PainIntensityActivity" />
+        <activity android:name=".Activity.PainOnsetActivity" />
+        <activity android:name=".Activity.MedicationActivity"></activity>
     </application>
 
 </manifest>

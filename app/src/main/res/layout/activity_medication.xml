@@ -18,7 +18,7 @@
             android:background="@color/colorHintText"
             android:gravity="center"
             android:padding="@dimen/activity_vertical_margin_22dp"
-            android:text="Do you know when it started?"
+            android:text="Did you take any medication?"
             android:textColor="@color/colorPrimaryText"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -42,13 +42,13 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="4"
             android:background="@color/colorPrimaryButtonPressed1" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8" />
+            android:layout_weight="6" />
 
     </LinearLayout>
 
@@ -66,52 +66,45 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:paddingBottom="@dimen/activity_horizontal_margin"
-                android:paddingLeft="32dp"
-                android:paddingRight="32dp"
-                android:paddingTop="@dimen/activity_horizontal_margin">
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_start_time"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:gravity="center_vertical"
-                    android:text="START\nTIME"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="3:28 PM"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_size_h2"
-                    android:textStyle="bold" />
-
-                <TextView
+                <CheckBox
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:gravity="right"
-                    android:text="Nov\n5"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_size_h2"
-                    android:textStyle="bold" />
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:gravity="center"
+                    android:text="No medication"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_medication"
+                    android:gravity="center"
+                    android:text="1x Zomig 5mg"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_medication"
+                    android:gravity="center"
+                    android:text="Replax 200mg"
+                    android:textColor="@color/colorPrimaryText" />
+
 
             </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/colorDivider" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,14 +114,13 @@
 
                 <CheckBox
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_just_now"
+                    android:drawableTop="@drawable/checkbox_medication"
                     android:gravity="center"
-                    android:text="Just now"
+                    android:text="Maxalt 5mg"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -137,9 +129,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_15_minute"
+                    android:drawableTop="@drawable/checkbox_medication"
                     android:gravity="center"
-                    android:text="15 minute ago"
+                    android:text="1x Zomig 5mg"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -148,96 +140,13 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_30_minute"
+                    android:drawableTop="@drawable/checkbox_medication"
                     android:gravity="center"
-                    android:text="30 minute ago"
+                    android:text="Replax 200mg"
                     android:textColor="@color/colorPrimaryText" />
 
-                <CheckBox
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:button="@android:color/transparent"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_1_hour"
-                    android:gravity="center"
-                    android:text="1 hour ago"
-                    android:textColor="@color/colorPrimaryText" />
-
-                <CheckBox
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:button="@android:color/transparent"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_other_time"
-                    android:gravity="center"
-                    android:text="Other time"
-                    android:textColor="@color/colorPrimaryText" />
 
             </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:background="@color/colorHintText"
-                android:gravity="center"
-                android:padding="@dimen/activity_vertical_margin_22dp"
-                android:text="Do you know when it ended?"
-                android:textColor="@color/colorPrimaryText"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:paddingBottom="@dimen/activity_horizontal_margin"
-                android:paddingLeft="32dp"
-                android:paddingRight="32dp"
-                android:paddingTop="@dimen/activity_horizontal_margin">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/ic_end_time"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:gravity="center_vertical"
-                    android:text="END\nTIME"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="--:--"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_size_h2"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:text="Nov\n5"
-                    android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/text_size_h2"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/colorDivider" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -247,25 +156,13 @@
 
                 <CheckBox
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:button="@android:color/transparent"
-                    android:checked="true"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_not_yet_finish"
-                    android:gravity="center"
-                    android:text="Not yet finished"
-                    android:textColor="@color/colorPrimaryText" />
-
-                <CheckBox
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_just_now"
+                    android:drawableTop="@drawable/checkbox_medication"
                     android:gravity="center"
-                    android:text="Just now"
+                    android:text="Maxalt 5mg"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -274,9 +171,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_15_minute"
+                    android:drawableTop="@drawable/checkbox_medication"
                     android:gravity="center"
-                    android:text="15 minute ago"
+                    android:text="1x Zomig 5mg"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -285,9 +182,29 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_30_minute"
+                    android:drawableTop="@drawable/checkbox_medication"
                     android:gravity="center"
-                    android:text="30 minute ago"
+                    android:text="Replax 200mg"
+                    android:textColor="@color/colorPrimaryText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_add_new"
+                    android:gravity="center"
+                    android:text="Add new"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -296,9 +213,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_1_hour"
+                    android:drawableTop="@drawable/checkbox_remove_item"
                     android:gravity="center"
-                    android:text="1 hour ago"
+                    android:text="Remove items"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -307,10 +224,11 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_other_time"
+                    android:drawableTop="@drawable/checkbox_arrange_item"
                     android:gravity="center"
-                    android:text="Other time"
+                    android:text="Arrange items"
                     android:textColor="@color/colorPrimaryText" />
+
 
             </LinearLayout>
 
@@ -343,7 +261,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:background="@drawable/btn_primary_back_inactive"
+            android:background="@drawable/btn_primary_orange"
             android:clickable="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -358,7 +276,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEXT"
+                    android:text="SKIP"
                     android:textAllCaps="true"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
@@ -377,7 +295,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="@dimen/activity_vertical_margin_4dp"
-                android:text="TO PAIN INTENSITY"
+                android:text="TO RELIEF"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />

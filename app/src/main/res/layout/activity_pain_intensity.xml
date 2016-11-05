@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.blueeagle.migrainebuddyui.Activity.MigraineSummaryActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorHintText"
+            android:gravity="center"
+            android:padding="@dimen/activity_vertical_margin_22dp"
+            android:text="How bad was it?"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_vertical_margin_8dp"
+            android:background="@drawable/btn_help" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rlNavBar"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryButtonPressed1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnBottom"
+        android:layout_below="@+id/rlNavBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rbgIntensityRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity10"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_10"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity9"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_9"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity8"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_8"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity7"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_7"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity6"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_6"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity5"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_5"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="5"
+                    android:checked="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity4"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_4"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity3"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_3"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_2"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbIntensity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radio_intensity_1"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnIntensity55"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:src="@drawable/ic_hurts_worst" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="HURTS WORST"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnIntensity5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Hurts worst"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/activity_vertical_margin_6dp"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Excuriating unabled to do any activities because od pain"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnIntensity44"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:src="@drawable/ic_severe" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="SEVRE"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnIntensity4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Hurts a lot"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/activity_vertical_margin_6dp"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Unabled to do any activities"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnIntensity33"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorIntensity5Checked"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:src="@drawable/ic_moderate" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="MODERATE"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnIntensity3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Hurts more"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/activity_vertical_margin_6dp"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Unabled to do some activities"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnIntensity22"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:src="@drawable/ic_mild" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="MILD"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnIntensity2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Hurts litte more"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/activity_vertical_margin_6dp"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Can do most activities"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnIntensity11"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="56dp"
+                            android:src="@drawable/ic_hurts_bit" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="HURTS A BIT"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnIntensity1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Hurts litte"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/activity_vertical_margin_6dp"
+                            android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                            android:text="Pain is present but does not limit activity"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lnBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBotherLater"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/btn_primary_back"
+            android:drawablePadding="@dimen/activity_vertical_margin_4dp"
+            android:drawableTop="@drawable/ic_bother_me_later"
+            android:padding="@dimen/activity_vertical_margin_8dp"
+            android:text="Bother later"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@drawable/btn_primary_back_inactive"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/btnEditRunning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin_4dp"
+                    android:src="@drawable/ic_next" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/activity_vertical_margin_4dp"
+                android:text="TO MEDICATION"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

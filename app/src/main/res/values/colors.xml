@@ -24,4 +24,34 @@
 
     <color name="colorNavBack">#2A3132</color>
     <color name="colorBackground">#E0E0E0</color>
+
+    <color name="colorIntensity1Normal">#AED581</color>
+    <color name="colorIntensity1Checked">#64DD17</color>
+
+    <color name="colorIntensity2Normal">#DCE775</color>
+    <color name="colorIntensity2Checked">#64DD17</color>
+
+    <color name="colorIntensity3Normal">#DCE775</color>
+    <color name="colorIntensity3Checked">#CDDC39</color>
+
+    <color name="colorIntensity4Normal">#DCE775</color>
+    <color name="colorIntensity4Checked">#FFCA28</color>
+
+    <color name="colorIntensity5Normal">#FFE57F</color>
+    <color name="colorIntensity5Checked">#FFCA28</color>
+
+    <color name="colorIntensity6Normal">#FFE57F</color>
+    <color name="colorIntensity6Checked">#FFCA28</color>
+
+    <color name="colorIntensity7Normal">#FFE082</color>
+    <color name="colorIntensity7Checked">#FBC02D</color>
+
+    <color name="colorIntensity8Normal">#FFC080</color>
+    <color name="colorIntensity8Checked">#F9A825</color>
+
+    <color name="colorIntensity9Normal">#FFD180</color>
+    <color name="colorIntensity9Checked">#F57F17</color>
+
+    <color name="colorIntensity10Normal">#FFAB91</color>
+    <color name="colorIntensity10Checked">#FF5722</color>
 </resources>

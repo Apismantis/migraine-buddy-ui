@@ -9,37 +9,40 @@ import android.widget.LinearLayout;
 
 import com.blueeagle.migrainebuddyui.R;
 
-public class TimeSelectionActivity extends AppCompatActivity {
+public class PainOnsetActivity extends AppCompatActivity implements View.OnClickListener {
 
     private LinearLayout btnNext;
     private Button btnBotherLater;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_time_selection);
+        setContentView(R.layout.activity_pain_onset);
 
         getSupportActionBar().hide();
 
         btnNext = (LinearLayout) findViewById(R.id.btnNext);
         btnBotherLater = (Button) findViewById(R.id.btnBotherLater);
 
-        btnBotherLater.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TimeSelectionActivity.this, MyRecordActivity.class);
+        btnBotherLater.setOnClickListener(this);
+        btnNext.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+
+        switch (id) {
+            case R.id.btnBotherLater:
+                Intent intent = new Intent(PainOnsetActivity.this, MyRecordActivity.class);
                 startActivity(intent);
                 finish();
-            }
-        });
+                break;
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TimeSelectionActivity.this, PainIntensityActivity.class);
-                startActivity(intent);
-            }
-        });
+            case R.id.btnNext:
+                Intent intent1 = new Intent(PainOnsetActivity.this, MedicationActivity.class);
+                startActivity(intent1);
+                break;
+        }
     }
 }

@@ -105,7 +105,8 @@ public class MyRecordActivity extends AppCompatActivity {
             Intent intent = new Intent(MyRecordActivity.this, SleepTimeActivity.class);
             startActivity(intent);
         } else {
-            
+            Intent intent = new Intent(MyRecordActivity.this, TimeSelectionActivity.class);
+            startActivity(intent);
         }
     }
 
