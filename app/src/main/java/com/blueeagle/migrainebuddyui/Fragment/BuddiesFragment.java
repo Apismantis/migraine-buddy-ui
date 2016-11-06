@@ -56,13 +56,13 @@ public class BuddiesFragment extends Fragment {
         List<StatusItem> statusItems = new ArrayList<>();
 
         statusItems.add(new StatusItem("Pressure Buddy",
-                "The pressure is currently 0.0 milibar",
-                "Last seen\n12 minutes ago",
+                "The pressure is currently 0.0 millibar",
+                "Last seen 12 minutes ago",
                 R.drawable.ic_city_buddy));
 
         statusItems.add(new StatusItem("Show risk of migraines in your city",
                 "Determining location can take up 2 minutes...",
-                "Last seen\n12 minutes ago",
+                "Last seen 12 minutes ago",
                 R.drawable.ic_city_buddy));
 
         return statusItems;

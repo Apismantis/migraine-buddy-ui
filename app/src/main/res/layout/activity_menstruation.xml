@@ -18,7 +18,7 @@
             android:background="@color/colorHintText"
             android:gravity="center"
             android:padding="@dimen/activity_vertical_margin_22dp"
-            android:text="Where did pain start?"
+            android:text="Were you having your menstrual cycles?"
             android:textColor="@color/colorPrimaryText"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -42,13 +42,13 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="8"
             android:background="@color/colorPrimaryButtonPressed1" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="7" />
+            android:layout_weight="2" />
 
     </LinearLayout>
 
@@ -58,12 +58,54 @@
         android:layout_above="@+id/lnBottom"
         android:layout_below="@+id/rlNavBar">
 
-        <ImageView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"
-            android:scaleType="centerInside"
-            android:src="@drawable/pain_location_0" />
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:gravity="center"
+                    android:text="None"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_pounding_pain"
+                    android:gravity="center"
+                    android:text="Pounding pain"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_pulsating_pain"
+                    android:gravity="center"
+                    android:text="Pulsating pain"
+                    android:textColor="@color/colorPrimaryText" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </ScrollView>
 
@@ -107,7 +149,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEXT"
+                    android:text="SKIP"
                     android:textAllCaps="true"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
@@ -126,7 +168,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="@dimen/activity_vertical_margin_4dp"
-                android:text="TO PAIN ONSET"
+                android:text="TO HELFUL RELIEFS"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />

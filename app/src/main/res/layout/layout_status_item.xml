@@ -7,7 +7,7 @@
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingBottom="@dimen/activity_vertical_margin_8dp"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin_8dp"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin_8dp">
 
@@ -47,7 +47,7 @@
                 android:id="@+id/tvTime"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
+                android:layout_weight="3.5"
                 android:gravity="right"
                 android:text="Last seen\n2 minutes ago"
                 android:textColor="@color/colorPrimaryText"
@@ -60,7 +60,7 @@
             android:id="@+id/tvContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/activity_vertical_margin_8dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin_4dp"
             android:maxLines="2"
             android:text="The pressure current is 0.0"
             android:textColor="@color/colorPrimaryText"

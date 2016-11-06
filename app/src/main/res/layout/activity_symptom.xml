@@ -18,7 +18,7 @@
             android:background="@color/colorHintText"
             android:gravity="center"
             android:padding="@dimen/activity_vertical_margin_22dp"
-            android:text="Did you take any medication?"
+            android:text="Were you experiencing any of these symptoms?"
             android:textColor="@color/colorPrimaryText"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -42,13 +42,13 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_weight="5"
             android:background="@color/colorPrimaryButtonPressed1" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="6" />
+            android:layout_weight="5" />
 
     </LinearLayout>
 
@@ -74,11 +74,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
                     android:drawableTop="@drawable/checkbox_no_medication"
                     android:gravity="center"
-                    android:text="No medication"
+                    android:text="None"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -87,9 +86,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_medication"
+                    android:drawableTop="@drawable/checkbox_pounding_pain"
                     android:gravity="center"
-                    android:text="1x Zomig 5mg"
+                    android:text="Pounding pain"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -98,9 +97,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_medication"
+                    android:drawableTop="@drawable/checkbox_pulsating_pain"
                     android:gravity="center"
-                    android:text="Replax 200mg"
+                    android:text="Pulsating pain"
                     android:textColor="@color/colorPrimaryText" />
 
 
@@ -118,9 +117,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_medication"
+                    android:drawableTop="@drawable/checkbox_throbbing_pain"
                     android:gravity="center"
-                    android:text="Maxalt 5mg"
+                    android:text="Throbbing pain"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -129,9 +128,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_medication"
+                    android:drawableTop="@drawable/checkbox_worse_pain_moving"
                     android:gravity="center"
-                    android:text="1x Zomig 5mg"
+                    android:text="Worse pain if moving"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -140,9 +139,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_medication"
+                    android:drawableTop="@drawable/checkbox_nausea"
                     android:gravity="center"
-                    android:text="Replax 200mg"
+                    android:text="Nausea"
                     android:textColor="@color/colorPrimaryText" />
 
 
@@ -160,9 +159,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_medication"
+                    android:drawableTop="@drawable/checkbox_no_medication"
                     android:gravity="center"
-                    android:text="Maxalt 5mg"
+                    android:text="None"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -171,10 +170,72 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_injection"
+                    android:drawableTop="@drawable/checkbox_pounding_pain"
                     android:gravity="center"
-                    android:text="1x Zomig 5mg"
+                    android:text="Pounding pain"
                     android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_pulsating_pain"
+                    android:gravity="center"
+                    android:text="Pulsating pain"
+                    android:textColor="@color/colorPrimaryText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_throbbing_pain"
+                    android:gravity="center"
+                    android:text="Throbbing pain"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_worse_pain_moving"
+                    android:gravity="center"
+                    android:text="Worse pain if moving"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_nausea"
+                    android:gravity="center"
+                    android:text="Nausea"
+                    android:textColor="@color/colorPrimaryText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
 
                 <CheckBox
                     android:layout_width="0dp"
@@ -187,15 +248,6 @@
                     android:text="Add new"
                     android:textAllCaps="false"
                     android:textColor="@color/colorPrimaryText" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:orientation="horizontal">
 
                 <CheckBox
                     android:layout_width="0dp"
@@ -219,11 +271,6 @@
                     android:gravity="center"
                     android:text="Arrange items"
                     android:textColor="@color/colorPrimaryText" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
 
             </LinearLayout>
 
@@ -256,7 +303,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:background="@drawable/btn_primary_back_1"
+            android:background="@drawable/btn_primary_orange"
             android:clickable="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -290,7 +337,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="@dimen/activity_vertical_margin_4dp"
-                android:text="TO RELIEF"
+                android:text="TO AURA AND PRODROME"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />

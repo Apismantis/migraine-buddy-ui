@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/btn_primary_back_inactive"
+        android:background="@drawable/btn_primary_back_1"
         android:clickable="true"
         android:gravity="center"
         android:orientation="horizontal">

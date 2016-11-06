@@ -50,7 +50,16 @@
         <activity android:name=".Activity.TimeSelectionActivity" />
         <activity android:name=".Activity.PainIntensityActivity" />
         <activity android:name=".Activity.PainOnsetActivity" />
-        <activity android:name=".Activity.MedicationActivity"></activity>
+        <activity android:name=".Activity.MedicationActivity" />
+        <activity android:name=".Activity.ReliefActivity" />
+        <activity android:name=".Activity.SymptomActivity" />
+        <activity android:name=".Activity.AuraActivity" />
+        <activity android:name=".Activity.AffectedActivity" />
+        <activity android:name=".Activity.LocationActivity" />
+        <activity android:name=".Activity.TriggerActivity" />
+        <activity android:name=".Activity.MenstruationActivity" />
+        <activity android:name=".Activity.HelfulReliefActivity" />
+        <activity android:name=".Activity.UnhelfulReliefActivity"></activity>
     </application>
 
 </manifest>

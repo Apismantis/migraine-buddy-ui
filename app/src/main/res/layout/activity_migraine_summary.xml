@@ -848,7 +848,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/lnBottom"
             android:layout_weight="2.95"
-            android:background="@drawable/btn_primary_back_inactive"
+            android:background="@drawable/btn_primary_back_1"
             android:gravity="center"
             android:orientation="horizontal">
 

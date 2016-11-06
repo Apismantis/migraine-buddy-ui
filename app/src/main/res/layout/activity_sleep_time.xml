@@ -243,6 +243,6 @@
         android:padding="@dimen/activity_vertical_margin_22dp"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size_h2"
-        android:background="@drawable/btn_primary_back_inactive"/>
+        android:background="@drawable/btn_primary_back_1"/>
 
 </RelativeLayout>
