@@ -1,10 +1,8 @@
 package com.blueeagle.migrainebuddyui.Activity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -12,8 +10,13 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.support.design.widget.TabLayout;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.blueeagle.migrainebuddyui.Adapter.PagerAdapter;
@@ -56,8 +59,18 @@ public class MainActivity extends AppCompatActivity {
 
         // Init menu item
         lvMenuItem = (ListView) findViewById(R.id.lvMenuItem);
-        List<NavMenuItem> menuItems = initMenuItem();
+        final List<NavMenuItem> menuItems = initMenuItem();
         lvMenuItem.setAdapter(new MenuItemAdapter(menuItems, this));
+        lvMenuItem.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Log.d(TAG, "aaaa");
+
+                if (menuItems.get(i).getTitle().equals("Leave Feedback")) {
+                    openFeedbackDialog();
+                }
+            }
+        });
 
         // Init viewpager
         viewPager = (ViewPager) findViewById(R.id.viewPager);
@@ -70,8 +83,24 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setCurrentItem(1);
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        initTablayout();
+        initTabLayout();
         tabLayout.setupWithViewPager(viewPager);
+    }
+
+    private void openFeedbackDialog() {
+        final Dialog dialog = new Dialog(getApplicationContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.layout_dialog_feedback);
+
+        Button btnCancel = (Button) dialog.findViewById(R.id.btnCancel);
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 
     private List<NavMenuItem> initMenuItem() {
@@ -88,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         return menuItems;
     }
 
-    public void initTablayout() {
+    public void initTabLayout() {
         tabLayout.addTab(tabLayout.newTab().setText("REPORTS"));
         tabLayout.addTab(tabLayout.newTab().setText("ME"));
         tabLayout.addTab(tabLayout.newTab().setText("BUDDIES"));

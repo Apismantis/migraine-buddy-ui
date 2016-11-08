@@ -42,13 +42,13 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5"
+            android:layout_weight="6"
             android:background="@color/colorPrimaryButtonPressed1" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5" />
+            android:layout_weight="4" />
 
     </LinearLayout>
 
@@ -75,7 +75,7 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:drawableTop="@drawable/checkbox_none"
                     android:gravity="center"
                     android:text="None"
                     android:textColor="@color/colorPrimaryText" />
@@ -159,9 +159,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:drawableTop="@drawable/checkbox_vomitin"
                     android:gravity="center"
-                    android:text="None"
+                    android:text="Vomiting"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -170,9 +170,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_pounding_pain"
+                    android:drawableTop="@drawable/checkbox_sensitivity"
                     android:gravity="center"
-                    android:text="Pounding pain"
+                    android:text="Sensitivity to light"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -181,9 +181,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_pulsating_pain"
+                    android:drawableTop="@drawable/checkbox_sensitivity_noise"
                     android:gravity="center"
-                    android:text="Pulsating pain"
+                    android:text="Sensitivity to noise"
                     android:textColor="@color/colorPrimaryText" />
 
 
@@ -201,9 +201,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_throbbing_pain"
+                    android:drawableTop="@drawable/checkbox_sensitivity_smell"
                     android:gravity="center"
-                    android:text="Throbbing pain"
+                    android:text="Sensitivity to smell"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -212,9 +212,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_worse_pain_moving"
+                    android:drawableTop="@drawable/checkbox_heat"
                     android:gravity="center"
-                    android:text="Worse pain if moving"
+                    android:text="Heat"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -223,9 +223,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_nausea"
+                    android:drawableTop="@drawable/checkbox_ringin_ear"
                     android:gravity="center"
-                    android:text="Nausea"
+                    android:text="Ringing in ears/ Tinitus"
                     android:textColor="@color/colorPrimaryText" />
 
 

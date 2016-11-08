@@ -42,13 +42,13 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5"
+            android:layout_weight="9"
             android:background="@color/colorPrimaryButtonPressed1" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5" />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -75,7 +75,7 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:drawableTop="@drawable/checkbox_none"
                     android:gravity="center"
                     android:text="None"
                     android:textColor="@color/colorPrimaryText" />
@@ -159,7 +159,7 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:drawableTop="@drawable/checkbox_none"
                     android:gravity="center"
                     android:text="None"
                     android:textColor="@color/colorPrimaryText" />

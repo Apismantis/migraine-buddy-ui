@@ -42,13 +42,13 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5"
+            android:layout_weight="7"
             android:background="@color/colorPrimaryButtonPressed1" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="5" />
+            android:layout_weight="3" />
 
     </LinearLayout>
 
@@ -75,9 +75,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:drawableTop="@drawable/checkbox_none"
                     android:gravity="center"
-                    android:text="None"
+                    android:text="No"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -86,9 +86,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_pounding_pain"
+                    android:drawableTop="@drawable/checkbox_weakness"
                     android:gravity="center"
-                    android:text="Pounding pain"
+                    android:text="Weakness"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -97,51 +97,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_pulsating_pain"
+                    android:drawableTop="@drawable/checkbox_fatigue"
                     android:gravity="center"
-                    android:text="Pulsating pain"
-                    android:textColor="@color/colorPrimaryText" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:button="@android:color/transparent"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_throbbing_pain"
-                    android:gravity="center"
-                    android:text="Throbbing pain"
-                    android:textColor="@color/colorPrimaryText" />
-
-                <CheckBox
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:button="@android:color/transparent"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_worse_pain_moving"
-                    android:gravity="center"
-                    android:text="Worse pain if moving"
-                    android:textColor="@color/colorPrimaryText" />
-
-                <CheckBox
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:button="@android:color/transparent"
-                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_nausea"
-                    android:gravity="center"
-                    android:text="Nausea"
+                    android:text="Fatigue/Achiness"
                     android:textColor="@color/colorPrimaryText" />
 
 
@@ -159,9 +117,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:drawableTop="@drawable/checkbox_visual_distuebance"
                     android:gravity="center"
-                    android:text="None"
+                    android:text="Visual disturbance"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -170,9 +128,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_pounding_pain"
+                    android:drawableTop="@drawable/checkbox_tingling_head"
                     android:gravity="center"
-                    android:text="Pounding pain"
+                    android:text="Tingling in head"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -181,9 +139,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_pulsating_pain"
+                    android:drawableTop="@drawable/checkbox_tingling_neck"
                     android:gravity="center"
-                    android:text="Pulsating pain"
+                    android:text="Tingling in neck"
                     android:textColor="@color/colorPrimaryText" />
 
 
@@ -201,9 +159,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_throbbing_pain"
+                    android:drawableTop="@drawable/checkbox_tingling_eye"
                     android:gravity="center"
-                    android:text="Throbbing pain"
+                    android:text="Tingling near eye(s)"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -212,9 +170,9 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_worse_pain_moving"
+                    android:drawableTop="@drawable/checkbox_yawning"
                     android:gravity="center"
-                    android:text="Worse pain if moving"
+                    android:text="Yawning"
                     android:textColor="@color/colorPrimaryText" />
 
                 <CheckBox
@@ -223,9 +181,51 @@
                     android:layout_weight="1"
                     android:button="@android:color/transparent"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_nausea"
+                    android:drawableTop="@drawable/checkbox_muscle_stiffness"
                     android:gravity="center"
-                    android:text="Nausea"
+                    android:text="Muscle stiffness"
+                    android:textColor="@color/colorPrimaryText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_irrirability"
+                    android:gravity="center"
+                    android:text="Irritability"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_headache"
+                    android:gravity="center"
+                    android:text="Headache"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@android:color/transparent"
+                    android:drawablePadding="@dimen/activity_vertical_margin_6dp"
+                    android:drawableTop="@drawable/checkbox_aura_only"
+                    android:gravity="center"
+                    android:text="Aura only"
                     android:textColor="@color/colorPrimaryText" />
 
 
@@ -337,7 +337,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="@dimen/activity_vertical_margin_4dp"
-                android:text="TO AURA AFFECTED ACTIVITIES"
+                android:text="TO AFFECTED ACTIVITIES"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />

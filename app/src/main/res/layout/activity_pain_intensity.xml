@@ -42,13 +42,13 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:background="@color/colorPrimaryButtonPressed1" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="8" />
+            android:layout_weight="7" />
 
     </LinearLayout>
 
@@ -539,7 +539,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:background="@drawable/btn_primary_back_1"
+            android:background="@drawable/btn_primary_orange"
             android:clickable="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -554,7 +554,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEXT"
+                    android:text="SKIP"
                     android:textAllCaps="true"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"

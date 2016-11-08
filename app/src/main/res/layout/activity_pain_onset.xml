@@ -92,7 +92,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
-            android:background="@drawable/btn_primary_back_1"
+            android:background="@drawable/btn_primary_orange"
             android:clickable="true"
             android:gravity="center"
             android:orientation="vertical">
@@ -107,7 +107,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEXT"
+                    android:text="SKIP"
                     android:textAllCaps="true"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="@dimen/activity_vertical_margin_4dp"
-                android:text="TO PAIN ONSET"
+                android:text="TO MEDICATION"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />

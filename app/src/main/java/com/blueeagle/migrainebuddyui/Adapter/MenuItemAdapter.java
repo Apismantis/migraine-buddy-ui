@@ -1,12 +1,15 @@
 package com.blueeagle.migrainebuddyui.Adapter;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -56,23 +59,24 @@ public class MenuItemAdapter extends BaseAdapter {
         holder.imvIcon.setImageResource(navMenuItems.get(position).getIcon());
         holder.tvTitle.setText(navMenuItems.get(position).getTitle());
 
-        // Set on touch
-        holder.lnMenuItem.setOnTouchListener(new View.OnTouchListener() {
+        holder.lnMenuItem.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        holder.imvIcon.setImageResource(navMenuItems.get(position).getIconPressed());
-                        holder.tvTitle.setTextColor(Color.WHITE);
-                        break;
+            public void onClick(View view) {
+                if (position == 1) {
+                    final Dialog dialog = new Dialog(context);
+                    dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    dialog.setContentView(R.layout.layout_dialog_feedback);
 
-                    default:
-                        holder.imvIcon.setImageResource(navMenuItems.get(position).getIcon());
-                        holder.tvTitle.setTextColor(Color.parseColor("#7DC1C8"));
-                        break;
+                    Button btnCancel = (Button) dialog.findViewById(R.id.btnCancel);
+                    btnCancel.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
+
+                    dialog.show();
                 }
-
-                return true;
             }
         });
 

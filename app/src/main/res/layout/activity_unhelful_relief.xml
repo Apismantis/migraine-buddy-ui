@@ -76,7 +76,7 @@
                     android:button="@android:color/transparent"
                     android:checked="true"
                     android:drawablePadding="@dimen/activity_vertical_margin_6dp"
-                    android:drawableTop="@drawable/checkbox_no_medication"
+                    android:drawableTop="@drawable/checkbox_none"
                     android:gravity="center"
                     android:text="No medication"
                     android:textColor="@color/colorPrimaryText" />
