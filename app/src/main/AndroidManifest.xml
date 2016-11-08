@@ -41,7 +41,9 @@
         <activity
             android:name=".Activity.NotificationDetailActivity"
             android:label="Notification Detail" />
-        <activity android:name=".Activity.MyRecordActivity" />
+        <activity
+            android:name=".Activity.MyRecordActivity"
+            android:label="My records" />
         <activity
             android:name=".Activity.SleepTimeActivity"
             android:label="Sleep Time"
